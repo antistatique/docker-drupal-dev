@@ -6,7 +6,7 @@ metadataTest:
     - key: 'APACHE_DOCUMENT_ROOT'
       value: '/var/www/web'
     - key: 'PATH'
-      value: '/var/www/node_modules/.bin:/var/www/vendor/bin:/var/www/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+      value: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/node_modules/.bin:/var/www/vendor/bin:/var/www/bin'
     - key: 'ARTIFACTS_DEST'
       value: '/usr/bin/artifacts'
   volumes: ["/var/backups"]

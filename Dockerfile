@@ -3,7 +3,7 @@ FROM php:%%PHP_VERSION%%-apache
 ENV APACHE_DOCUMENT_ROOT /var/www/web
 ENV NODE_MAJOR_VERSION %%NODE_VERSION%%
 
-ENV PATH="/var/www/node_modules/.bin:/var/www/vendor/bin:/var/www/bin:${PATH}"
+ENV PATH="${PATH}:/var/www/node_modules/.bin:/var/www/vendor/bin:/var/www/bin"
 ENV ARTIFACTS_DEST="/usr/bin/artifacts"
 
 ENV COMPOSER_MEMORY_LIMIT=-1
